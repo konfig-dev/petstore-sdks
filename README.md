@@ -1,4 +1,4 @@
-# konfig
+# petstore-sdks
 
 |Language|Version|Package Manager|Documentation|Source|
 |-|-|-|-|-|

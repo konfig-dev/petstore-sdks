@@ -180,7 +180,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             // verify required parameter 'username' is not null or undefined
             assertParamExists('delete', 'username', username)
             const localVarPath = `/user/{username}`
-                .replace(`{${"username"}}`, encodeURIComponent(String(username)));
+                .replace(`{${"username"}}`, encodeURIComponent(String(username !== undefined ? username : `-username-`)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -222,7 +222,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             // verify required parameter 'username' is not null or undefined
             assertParamExists('getByName', 'username', username)
             const localVarPath = `/user/{username}`
-                .replace(`{${"username"}}`, encodeURIComponent(String(username)));
+                .replace(`{${"username"}}`, encodeURIComponent(String(username !== undefined ? username : `-username-`)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -353,7 +353,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             // verify required parameter 'userCreateRequest' is not null or undefined
             assertParamExists('update', 'userCreateRequest', userCreateRequest)
             const localVarPath = `/user/{username}`
-                .replace(`{${"username"}}`, encodeURIComponent(String(username)));
+                .replace(`{${"username"}}`, encodeURIComponent(String(username !== undefined ? username : `-username-`)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;

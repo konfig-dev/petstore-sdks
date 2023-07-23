@@ -95,7 +95,7 @@ export const PetApiAxiosParamCreator = function (configuration?: Configuration) 
             // verify required parameter 'petId' is not null or undefined
             assertParamExists('delete', 'petId', petId)
             const localVarPath = `/pet/{petId}`
-                .replace(`{${"petId"}}`, encodeURIComponent(String(petId)));
+                .replace(`{${"petId"}}`, encodeURIComponent(String(petId !== undefined ? petId : `-petId-`)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -233,7 +233,7 @@ export const PetApiAxiosParamCreator = function (configuration?: Configuration) 
             // verify required parameter 'petId' is not null or undefined
             assertParamExists('getById', 'petId', petId)
             const localVarPath = `/pet/{petId}`
-                .replace(`{${"petId"}}`, encodeURIComponent(String(petId)));
+                .replace(`{${"petId"}}`, encodeURIComponent(String(petId !== undefined ? petId : `-petId-`)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -323,7 +323,7 @@ export const PetApiAxiosParamCreator = function (configuration?: Configuration) 
             // verify required parameter 'petId' is not null or undefined
             assertParamExists('updateWithForm', 'petId', petId)
             const localVarPath = `/pet/{petId}`
-                .replace(`{${"petId"}}`, encodeURIComponent(String(petId)));
+                .replace(`{${"petId"}}`, encodeURIComponent(String(petId !== undefined ? petId : `-petId-`)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -380,7 +380,7 @@ export const PetApiAxiosParamCreator = function (configuration?: Configuration) 
             // verify required parameter 'petId' is not null or undefined
             assertParamExists('uploadImage', 'petId', petId)
             const localVarPath = `/pet/{petId}/uploadImage`
-                .replace(`{${"petId"}}`, encodeURIComponent(String(petId)));
+                .replace(`{${"petId"}}`, encodeURIComponent(String(petId !== undefined ? petId : `-petId-`)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
