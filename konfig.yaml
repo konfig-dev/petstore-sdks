@@ -2,6 +2,18 @@
 
 outputDirectory: /tmp/pet-store-sdks-out
 specPath: api.yaml
+order:
+  - tag: user
+    operations:
+      - user_create
+      - user_login
+  - tag: store
+    operations:
+      - store_placeOrder
+  - tag: pet
+    operations:
+      - path: /pet
+        method: post
 generators:
   typescript:
     version: 1.0.1
